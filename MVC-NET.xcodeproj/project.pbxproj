@@ -56,15 +56,87 @@
 		444040B423707EAF00A9C9ED /* MVC-NET */ = {
 			isa = PBXGroup;
 			children = (
-				444040B523707EAF00A9C9ED /* AppDelegate.swift */,
-				444040B723707EAF00A9C9ED /* SceneDelegate.swift */,
-				444040B923707EAF00A9C9ED /* ViewController.swift */,
-				444040BB23707EAF00A9C9ED /* Main.storyboard */,
-				444040BE23707EB100A9C9ED /* Assets.xcassets */,
-				444040C023707EB100A9C9ED /* LaunchScreen.storyboard */,
-				444040C323707EB100A9C9ED /* Info.plist */,
+				444040CC23707F2300A9C9ED /* App */,
+				444040CD23707F9F00A9C9ED /* Comments */,
+				444040D12370806200A9C9ED /* Supporting Files */,
 			);
 			path = "MVC-NET";
+			sourceTree = "<group>";
+		};
+		444040C923707EF600A9C9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		444040CA23707F0300A9C9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+				444040BB23707EAF00A9C9ED /* Main.storyboard */,
+				444040C023707EB100A9C9ED /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		444040CB23707F0A00A9C9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				444040B523707EAF00A9C9ED /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		444040CC23707F2300A9C9ED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				444040C923707EF600A9C9ED /* Model */,
+				444040CA23707F0300A9C9ED /* View */,
+				444040CB23707F0A00A9C9ED /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		444040CD23707F9F00A9C9ED /* Comments */ = {
+			isa = PBXGroup;
+			children = (
+				444040D023707FCA00A9C9ED /* Model */,
+				444040CF23707FC300A9C9ED /* View */,
+				444040CE23707FB900A9C9ED /* Controller */,
+			);
+			path = Comments;
+			sourceTree = "<group>";
+		};
+		444040CE23707FB900A9C9ED /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				444040B923707EAF00A9C9ED /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		444040CF23707FC300A9C9ED /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		444040D023707FCA00A9C9ED /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		444040D12370806200A9C9ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				444040B723707EAF00A9C9ED /* SceneDelegate.swift */,
+				444040BE23707EB100A9C9ED /* Assets.xcassets */,
+				444040C323707EB100A9C9ED /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,7 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVC-NET/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC-NET/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,7 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruslan.MVC-NET";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "MVC-NET/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/MVC-NET/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +382,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ruslan.MVC-NET";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
