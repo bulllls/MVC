@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		44221E6A2373164300300428 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44221E692373164300300428 /* CommentCell.swift */; };
 		44221E6C237317E600300428 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44221E6B237317E600300428 /* Comment.swift */; };
+		44221E6F23731D3000300428 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44221E6E23731D3000300428 /* Networking.swift */; };
+		44221E7223731FFB00300428 /* CommentNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44221E7123731FFB00300428 /* CommentNetworkService.swift */; };
+		44221E74237320EE00300428 /* GetCommentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44221E73237320EE00300428 /* GetCommentResponse.swift */; };
 		444040B623707EAF00A9C9ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444040B523707EAF00A9C9ED /* AppDelegate.swift */; };
 		444040B823707EAF00A9C9ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444040B723707EAF00A9C9ED /* SceneDelegate.swift */; };
 		444040BA23707EAF00A9C9ED /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444040B923707EAF00A9C9ED /* CommentsViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		44221E692373164300300428 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		44221E6B237317E600300428 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		44221E6E23731D3000300428 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		44221E7123731FFB00300428 /* CommentNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentNetworkService.swift; sourceTree = "<group>"; };
+		44221E73237320EE00300428 /* GetCommentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCommentResponse.swift; sourceTree = "<group>"; };
 		444040B223707EAF00A9C9ED /* MVC-NET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVC-NET.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444040B523707EAF00A9C9ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		444040B723707EAF00A9C9ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44221E6D23731CF600300428 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				44221E6E23731D3000300428 /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		44221E7023731FB400300428 /* CommentNetworkServise */ = {
+			isa = PBXGroup;
+			children = (
+				44221E7123731FFB00300428 /* CommentNetworkService.swift */,
+			);
+			path = CommentNetworkServise;
+			sourceTree = "<group>";
+		};
 		444040A923707EAF00A9C9ED = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +118,7 @@
 				444040C923707EF600A9C9ED /* Model */,
 				444040CA23707F0300A9C9ED /* View */,
 				444040CB23707F0A00A9C9ED /* Controller */,
+				44221E6D23731CF600300428 /* Networking */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -106,6 +129,7 @@
 				444040D023707FCA00A9C9ED /* Model */,
 				444040CF23707FC300A9C9ED /* View */,
 				444040CE23707FB900A9C9ED /* Controller */,
+				44221E7023731FB400300428 /* CommentNetworkServise */,
 			);
 			path = Comments;
 			sourceTree = "<group>";
@@ -131,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				44221E6B237317E600300428 /* Comment.swift */,
+				44221E73237320EE00300428 /* GetCommentResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,8 +244,11 @@
 				44221E6C237317E600300428 /* Comment.swift in Sources */,
 				444040BA23707EAF00A9C9ED /* CommentsViewController.swift in Sources */,
 				444040B623707EAF00A9C9ED /* AppDelegate.swift in Sources */,
+				44221E6F23731D3000300428 /* Networking.swift in Sources */,
 				444040B823707EAF00A9C9ED /* SceneDelegate.swift in Sources */,
+				44221E74237320EE00300428 /* GetCommentResponse.swift in Sources */,
 				44221E6A2373164300300428 /* CommentCell.swift in Sources */,
+				44221E7223731FFB00300428 /* CommentNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
